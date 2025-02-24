@@ -43,6 +43,7 @@
     flex-grow: 10;
   }
 }
+
 .page {
   width: 100%;
   height: 100%;
@@ -54,27 +55,51 @@
   padding: 10px;
 
   margin-inline: auto;
+}
 
-  text-align: center;
+.section__heading {
+  width: min(90vw, 1200px);
+
+  font-size: var(--section-heading);
+  line-height: 120%;
+
+  text-align: start;
 }
 
 /* MAIN */
 
 .main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.main__header {
+.main__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  width: min(90vw, 1200px);
+}
+
+.main__heading {
 }
 
 .main__swiper {
 }
 
+.main__swiper-wrapper {
+}
+
 .main__card {
   position: relative;
-  width: 100%;
+  max-width: 100%;
   padding-top: 56.25%;
   overflow: hidden;
   margin: auto;
+
+  border-radius: 16px;
 }
 
 .main__card img {
@@ -88,13 +113,178 @@
 
 /* NEWS */
 
-.news__card {
-  width: 100%;
-  height: 200px;
+.news__item {
+  position: relative;
 
-  background-color: black;
+  transition: all 0.2s linear;
+
+  cursor: pointer;
 }
 
-input {
-  border: 1px solid red;
+.news__card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  width: 100%;
+  height: 100%;
+
+  border-radius: 16px;
+}
+
+.news__image-container {
+  width: 100%;
+  max-height: 200px;
+
+  border-radius: 16px;
+
+  overflow: hidden;
+}
+
+.news__image {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: all 0.2s linear;
+}
+
+.news__heading {
+  width: 100%;
+  text-align: start;
+}
+
+.news__description {
+  width: 100%;
+  max-height: 200px;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: start;
+  font-size: var(--content-text-size);
+}
+
+.news__date {
+  width: 100%;
+  text-align: start;
+}
+
+.news__link {
+  position: absolute;
+  inset: 0;
+
+  z-index: 1;
+}
+
+/* ABOUT */
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  width: min(90vw, 1200px);
+}
+
+/* TEAM */
+
+.team {
+  width: min(90vw, 1200px);
+}
+
+.swiper.team__swiper {
+  padding-block: 20px;
+  padding-inline-end: 20px;
+}
+
+.team__card {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  width: 100%;
+  min-height: 350px;
+  max-height: 350px;
+
+  border-radius: 16px;
+
+  transition: all 0.2s linear;
+
+  cursor: pointer;
+
+  overflow: hidden;
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team__image-container {
+  position: absolute;
+  inset: 0;
+
+  border-radius: 16px;
+
+  overflow: hidden;
+}
+
+.team__image {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: all 0.2s linear;
+}
+
+.team__heading {
+  position: absolute;
+
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+
+  padding: 5px;
+
+  text-align: center;
+
+  background-color: var(--white);
+}
+
+.team__link {
+  position: absolute;
+  inset: 0;
+
+  z-index: 1;
+}
+
+/* ATHLETES */
+
+.athletes {
+  width: min(90vw, 1200px);
+}
+
+@media screen {
+  .news__item:hover,
+  .team__card:hover {
+    transform: scale(1.02);
+    transition: all 0.2s linear;
+  }
+
+  .news__item:hover .news__image,
+  .team__card:hover .team__image {
+    transform: scale(1.02);
+    transition: all 0.2s linear;
+  }
 }
