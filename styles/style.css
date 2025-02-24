@@ -7,7 +7,6 @@
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,14 +48,6 @@
   height: 100%;
 }
 
-.section {
-  max-width: 1440px;
-
-  padding: 10px;
-
-  margin-inline: auto;
-}
-
 .section__heading {
   width: min(90vw, 1200px);
 
@@ -64,6 +55,20 @@
   line-height: 120%;
 
   text-align: start;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  max-width: 1440px;
+
+  padding: 30px 10px;
+
+  margin-inline: auto;
 }
 
 /* MAIN */
@@ -81,6 +86,8 @@
   gap: 20px;
 
   width: min(90vw, 1200px);
+
+  padding-block: 30px;
 }
 
 .main__heading {
@@ -112,6 +119,10 @@
 }
 
 /* NEWS */
+
+.news {
+  background-image: linear-gradient(to left top, #1c26d9, #005ff1, #138bfc, #66b3ff, #aad8ff);
+}
 
 .news__item {
   position: relative;
@@ -197,14 +208,24 @@
 }
 
 /* TEAM */
-
 .team {
+  background-image: linear-gradient(to left top, #1c26d9, #005ff1, #138bfc, #66b3ff, #aad8ff);
+}
+
+.team__wrapper {
   width: min(90vw, 1200px);
+
+  padding: 30px 0px;
 }
 
 .swiper.team__swiper {
   padding-block: 20px;
+  padding-inline-start: 10px;
   padding-inline-end: 20px;
+}
+
+.team-slide {
+  border-radius: 16px;
 }
 
 .team__card {
@@ -234,17 +255,22 @@
   inset: 0;
 
   border-radius: 16px;
-
-  overflow: hidden;
 }
 
 .team__image {
   width: 100%;
   height: 100%;
 
+  min-height: 350px;
+  max-height: 350px;
+
   object-fit: cover;
 
   transition: all 0.2s linear;
+
+  border-radius: 16px;
+
+  overflow: hidden;
 }
 
 .team__heading {
@@ -252,6 +278,7 @@
 
   bottom: 0;
   left: 0;
+  right: 0;
 
   width: 100%;
 
@@ -260,6 +287,9 @@
   text-align: center;
 
   background-color: var(--white);
+
+  border-bottom-right-radius: 16px;
+  border-bottom-left-radius: 16px;
 }
 
 .team__link {
@@ -272,7 +302,7 @@
 /* ATHLETES */
 
 .athletes {
-  width: min(90vw, 1200px);
+  background-image: linear-gradient(to left bottom, #1c26d9, #005ff1, #138bfc, #66b3ff, #aad8ff);
 }
 
 @media screen {
