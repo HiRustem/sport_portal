@@ -11,6 +11,54 @@
     <title>ФЕДЕРАЦИЯ ВОДНОЛЫЖНОГО СПОРТА РОССИИ</title>
   </head>
   <body class="page">
+    <header class="header">
+      <div class="logo__container">
+        <img class="logo" src="" alt="" />
+      </div>
+
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#">Новости</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Состав Федерации</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Спортсмены</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div id="mobileNavContainer" class="mobile__nav-container">
+        <div class="mobile__nav-wrapper">
+          <nav class="mobile__nav">
+            <ul class="mobile__nav-list">
+              <li class="mobile__nav-item">
+                <a class="nav__link" href="#">Новости</a>
+              </li>
+              <li class="mobile__nav-item">
+                <a class="nav__link" href="#">Состав Федерации</a>
+              </li>
+              <li class="mobile__nav-item">
+                <a class="nav__link" href="#">Спортсмены</a>
+              </li>
+              <li class="mobile__nav-item">
+                <a class="nav__link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+
+          <button class="mobile__nav-close">Закрыть</button>
+        </div>
+
+        <button class="mobile__nav-open">Открыть</button>
+      </div>
+    </header>
+
     <section class="main">
       <div class="main__wrapper">
         <h1 class="section__heading main__heading">ФЕДЕРАЦИЯ ВОДНОЛЫЖНОГО СПОРТА РОССИИ</h1>
@@ -48,26 +96,33 @@
 
     <section class="section responsive__list-container news">
       <div class="wrapper">
-        <h2 class="section__heading">НОВОСТИ</h2>
-        <ul class="responsive__list">
+        <div class="section__heading-container">
+          <h2 class="section__heading">НОВОСТИ</h2>
+
+          <a class="section__heading-link" href="#">Перейти</a>
+        </div>
+
+        <ul class="responsive__list news__list">
           <li class="responsive__list-item news__item">
             <article class="news__card">
               <div class="news__image-container">
                 <img class="news__image" src="/assets/images/news_1.webp" alt="news_1" />
               </div>
 
-              <h3 class="news__heading">Новость 1</h3>
+              <div class="news__content">
+                <h3 class="news__heading">Новость 1</h3>
 
-              <p class="news__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt non optio vero
-                doloremque culpa explicabo, consequatur veritatis eligendi labore cumque pariatur
-                quibusdam eos hic dolorum id ratione ipsum fuga deleniti! Eligendi voluptate itaque
-                labore asperiores quis at eos eius minima id dolor odit, officiis dolores
-                repellendus illum incidunt hic numquam optio quia tenetur ratione rem aliquid
-                architecto delectus. Officia, ab!
-              </p>
+                <p class="news__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt non optio vero
+                  doloremque culpa explicabo, consequatur veritatis eligendi labore cumque pariatur
+                  quibusdam eos hic dolorum id ratione ipsum fuga deleniti! Eligendi voluptate
+                  itaque labore asperiores quis at eos eius minima id dolor odit, officiis dolores
+                  repellendus illum incidunt hic numquam optio quia tenetur ratione rem aliquid
+                  architecto delectus. Officia, ab!
+                </p>
 
-              <p class="news__date">20.02.2025</p>
+                <p class="news__date">20.02.2025</p>
+              </div>
 
               <a class="news__link" href="#"></a>
             </article>
@@ -78,18 +133,20 @@
                 <img class="news__image" src="/assets/images/news_1.webp" alt="news_1" />
               </div>
 
-              <h3 class="news__heading">Новость 1</h3>
+              <div class="news__content">
+                <h3 class="news__heading">Новость 1</h3>
 
-              <p class="news__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt non optio vero
-                doloremque culpa explicabo, consequatur veritatis eligendi labore cumque pariatur
-                quibusdam eos hic dolorum id ratione ipsum fuga deleniti! Eligendi voluptate itaque
-                labore asperiores quis at eos eius minima id dolor odit, officiis dolores
-                repellendus illum incidunt hic numquam optio quia tenetur ratione rem aliquid
-                architecto delectus. Officia, ab!
-              </p>
+                <p class="news__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt non optio vero
+                  doloremque culpa explicabo, consequatur veritatis eligendi labore cumque pariatur
+                  quibusdam eos hic dolorum id ratione ipsum fuga deleniti! Eligendi voluptate
+                  itaque labore asperiores quis at eos eius minima id dolor odit, officiis dolores
+                  repellendus illum incidunt hic numquam optio quia tenetur ratione rem aliquid
+                  architecto delectus. Officia, ab!
+                </p>
 
-              <p class="news__date">20.02.2025</p>
+                <p class="news__date">20.02.2025</p>
+              </div>
 
               <a class="news__link" href="#"></a>
             </article>
@@ -100,18 +157,43 @@
                 <img class="news__image" src="/assets/images/news_1.webp" alt="news_1" />
               </div>
 
-              <h3 class="news__heading">Новость 1</h3>
+              <div class="news__content">
+                <h3 class="news__heading">Новость 1</h3>
 
-              <p class="news__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt non optio vero
-                doloremque culpa explicabo, consequatur veritatis eligendi labore cumque pariatur
-                quibusdam eos hic dolorum id ratione ipsum fuga deleniti! Eligendi voluptate itaque
-                labore asperiores quis at eos eius minima id dolor odit, officiis dolores
-                repellendus illum incidunt hic numquam optio quia tenetur ratione rem aliquid
-                architecto delectus. Officia, ab!
-              </p>
+                <p class="news__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt non optio vero
+                  doloremque culpa explicabo, consequatur veritatis eligendi labore cumque pariatur
+                  quibusdam eos hic dolorum id ratione ipsum fuga deleniti! Eligendi voluptate
+                  itaque labore asperiores quis at eos eius minima id dolor odit, officiis dolores
+                  repellendus illum incidunt hic numquam optio quia tenetur ratione rem aliquid
+                  architecto delectus. Officia, ab!
+                </p>
 
-              <p class="news__date">20.02.2025</p>
+                <p class="news__date">20.02.2025</p>
+              </div>
+              <a class="news__link" href="#"></a>
+            </article>
+          </li>
+          <li class="responsive__list-item news__item">
+            <article class="news__card">
+              <div class="news__image-container">
+                <img class="news__image" src="/assets/images/news_1.webp" alt="news_1" />
+              </div>
+
+              <div class="news__content">
+                <h3 class="news__heading">Новость 1</h3>
+
+                <p class="news__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt non optio vero
+                  doloremque culpa explicabo, consequatur veritatis eligendi labore cumque pariatur
+                  quibusdam eos hic dolorum id ratione ipsum fuga deleniti! Eligendi voluptate
+                  itaque labore asperiores quis at eos eius minima id dolor odit, officiis dolores
+                  repellendus illum incidunt hic numquam optio quia tenetur ratione rem aliquid
+                  architecto delectus. Officia, ab!
+                </p>
+
+                <p class="news__date">20.02.2025</p>
+              </div>
 
               <a class="news__link" href="#"></a>
             </article>
@@ -122,45 +204,176 @@
                 <img class="news__image" src="/assets/images/news_1.webp" alt="news_1" />
               </div>
 
-              <h3 class="news__heading">Новость 1</h3>
+              <div class="news__content">
+                <h3 class="news__heading">Новость 1</h3>
 
-              <p class="news__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt non optio vero
-                doloremque culpa explicabo, consequatur veritatis eligendi labore cumque pariatur
-                quibusdam eos hic dolorum id ratione ipsum fuga deleniti! Eligendi voluptate itaque
-                labore asperiores quis at eos eius minima id dolor odit, officiis dolores
-                repellendus illum incidunt hic numquam optio quia tenetur ratione rem aliquid
-                architecto delectus. Officia, ab!
-              </p>
+                <p class="news__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt non optio vero
+                  doloremque culpa explicabo, consequatur veritatis eligendi labore cumque pariatur
+                  quibusdam eos hic dolorum id ratione ipsum fuga deleniti! Eligendi voluptate
+                  itaque labore asperiores quis at eos eius minima id dolor odit, officiis dolores
+                  repellendus illum incidunt hic numquam optio quia tenetur ratione rem aliquid
+                  architecto delectus. Officia, ab!
+                </p>
 
-              <p class="news__date">20.02.2025</p>
-
-              <a class="news__link" href="#"></a>
-            </article>
-          </li>
-          <li class="responsive__list-item news__item">
-            <article class="news__card">
-              <div class="news__image-container">
-                <img class="news__image" src="/assets/images/news_1.webp" alt="news_1" />
+                <p class="news__date">20.02.2025</p>
               </div>
-
-              <h3 class="news__heading">Новость 1</h3>
-
-              <p class="news__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt non optio vero
-                doloremque culpa explicabo, consequatur veritatis eligendi labore cumque pariatur
-                quibusdam eos hic dolorum id ratione ipsum fuga deleniti! Eligendi voluptate itaque
-                labore asperiores quis at eos eius minima id dolor odit, officiis dolores
-                repellendus illum incidunt hic numquam optio quia tenetur ratione rem aliquid
-                architecto delectus. Officia, ab!
-              </p>
-
-              <p class="news__date">20.02.2025</p>
 
               <a class="news__link" href="#"></a>
             </article>
           </li>
         </ul>
+
+        <div class="news__swiper-wrapper">
+          <div id="newsSwiper" class="swiper news__swiper">
+            <div class="swiper-wrapper news__swiper-wrapper">
+              <div class="swiper-slide news-slide">
+                <article class="news__card">
+                  <div class="news__image-container">
+                    <img class="news__image" src="/assets/images/news_1.webp" alt="news_1" />
+                  </div>
+
+                  <div class="news__content">
+                    <h3 class="news__heading">Новость 1</h3>
+
+                    <p class="news__description">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt non optio vero
+                      doloremque culpa explicabo, consequatur veritatis eligendi labore cumque
+                      pariatur quibusdam eos hic dolorum id ratione ipsum fuga deleniti! Eligendi
+                      voluptate itaque labore asperiores quis at eos eius minima id dolor odit,
+                      officiis dolores repellendus illum incidunt hic numquam optio quia tenetur
+                      ratione rem aliquid architecto delectus. Officia, ab!
+                    </p>
+
+                    <p class="news__date">20.02.2025</p>
+                  </div>
+
+                  <a class="news__link" href="#"></a>
+                </article>
+              </div>
+              <div class="swiper-slide news-slide">
+                <article class="news__card">
+                  <div class="news__image-container">
+                    <img class="news__image" src="/assets/images/news_1.webp" alt="news_1" />
+                  </div>
+
+                  <div class="news__content">
+                    <h3 class="news__heading">Новость 1</h3>
+
+                    <p class="news__description">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt non optio vero
+                      doloremque culpa explicabo, consequatur veritatis eligendi labore cumque
+                      pariatur quibusdam eos hic dolorum id ratione ipsum fuga deleniti! Eligendi
+                      voluptate itaque labore asperiores quis at eos eius minima id dolor odit,
+                      officiis dolores repellendus illum incidunt hic numquam optio quia tenetur
+                      ratione rem aliquid architecto delectus. Officia, ab!
+                    </p>
+
+                    <p class="news__date">20.02.2025</p>
+                  </div>
+
+                  <a class="news__link" href="#"></a>
+                </article>
+              </div>
+              <div class="swiper-slide news-slide">
+                <article class="news__card">
+                  <div class="news__image-container">
+                    <img class="news__image" src="/assets/images/news_1.webp" alt="news_1" />
+                  </div>
+
+                  <div class="news__content">
+                    <h3 class="news__heading">Новость 1</h3>
+
+                    <p class="news__description">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt non optio vero
+                      doloremque culpa explicabo, consequatur veritatis eligendi labore cumque
+                      pariatur quibusdam eos hic dolorum id ratione ipsum fuga deleniti! Eligendi
+                      voluptate itaque labore asperiores quis at eos eius minima id dolor odit,
+                      officiis dolores repellendus illum incidunt hic numquam optio quia tenetur
+                      ratione rem aliquid architecto delectus. Officia, ab!
+                    </p>
+
+                    <p class="news__date">20.02.2025</p>
+                  </div>
+
+                  <a class="news__link" href="#"></a>
+                </article>
+              </div>
+              <div class="swiper-slide news-slide">
+                <article class="news__card">
+                  <div class="news__image-container">
+                    <img class="news__image" src="/assets/images/news_1.webp" alt="news_1" />
+                  </div>
+
+                  <div class="news__content">
+                    <h3 class="news__heading">Новость 1</h3>
+
+                    <p class="news__description">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt non optio vero
+                      doloremque culpa explicabo, consequatur veritatis eligendi labore cumque
+                      pariatur quibusdam eos hic dolorum id ratione ipsum fuga deleniti! Eligendi
+                      voluptate itaque labore asperiores quis at eos eius minima id dolor odit,
+                      officiis dolores repellendus illum incidunt hic numquam optio quia tenetur
+                      ratione rem aliquid architecto delectus. Officia, ab!
+                    </p>
+
+                    <p class="news__date">20.02.2025</p>
+                  </div>
+
+                  <a class="news__link" href="#"></a>
+                </article>
+              </div>
+              <div class="swiper-slide news-slide">
+                <article class="news__card">
+                  <div class="news__image-container">
+                    <img class="news__image" src="/assets/images/news_1.webp" alt="news_1" />
+                  </div>
+
+                  <div class="news__content">
+                    <h3 class="news__heading">Новость 1</h3>
+
+                    <p class="news__description">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt non optio vero
+                      doloremque culpa explicabo, consequatur veritatis eligendi labore cumque
+                      pariatur quibusdam eos hic dolorum id ratione ipsum fuga deleniti! Eligendi
+                      voluptate itaque labore asperiores quis at eos eius minima id dolor odit,
+                      officiis dolores repellendus illum incidunt hic numquam optio quia tenetur
+                      ratione rem aliquid architecto delectus. Officia, ab!
+                    </p>
+
+                    <p class="news__date">20.02.2025</p>
+                  </div>
+
+                  <a class="news__link" href="#"></a>
+                </article>
+              </div>
+              <div class="swiper-slide news-slide">
+                <article class="news__card">
+                  <div class="news__image-container">
+                    <img class="news__image" src="/assets/images/news_1.webp" alt="news_1" />
+                  </div>
+
+                  <div class="news__content">
+                    <h3 class="news__heading">Новость 1</h3>
+
+                    <p class="news__description">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt non optio vero
+                      doloremque culpa explicabo, consequatur veritatis eligendi labore cumque
+                      pariatur quibusdam eos hic dolorum id ratione ipsum fuga deleniti! Eligendi
+                      voluptate itaque labore asperiores quis at eos eius minima id dolor odit,
+                      officiis dolores repellendus illum incidunt hic numquam optio quia tenetur
+                      ratione rem aliquid architecto delectus. Officia, ab!
+                    </p>
+
+                    <p class="news__date">20.02.2025</p>
+                  </div>
+
+                  <a class="news__link" href="#"></a>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -191,7 +404,11 @@
 
     <section class="team">
       <div class="wrapper team__wrapper">
-        <h2 class="section__heading">СОСТАВ ФЕДЕРАЦИИ</h2>
+        <div class="section__heading-container">
+          <h2 class="section__heading">СОСТАВ ФЕДЕРАЦИИ</h2>
+
+          <a class="section__heading-link" href="#">Перейти</a>
+        </div>
 
         <div id="teamSwiper" class="swiper team__swiper">
           <div class="swiper-wrapper team__swiper-wrapper">
@@ -201,7 +418,21 @@
                   <img class="team__image" src="/assets/images/team_1.jpg" alt="team_1" />
                 </div>
 
-                <h3 class="team__heading">Иванов Иван Иванович</h3>
+                <div class="team__content">
+                  <h3 class="team__heading">Иванов Иван Иванович</h3>
+
+                  <p class="team__description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem at, fuga
+                    exercitationem ut dolore voluptatibus inventore voluptates voluptas placeat
+                    laborum quidem corporis fugit quia assumenda reprehenderit culpa ratione quas
+                    odio. Blanditiis labore similique cupiditate nisi libero natus odit animi illum
+                    iste tempore ratione distinctio, consequatur eos quod rem voluptatibus quas quam
+                    voluptatum quis veritatis vero commodi. Qui placeat ipsa praesentium. Assumenda
+                    eveniet et tempore nihil unde, temporibus reprehenderit nulla, dolorum ab eum
+                    asperiores quisquam, molestiae atque beatae repudiandae? Eaque assumenda odio
+                    quod unde. Amet, temporibus velit quaerat aperiam doloribus sunt!
+                  </p>
+                </div>
 
                 <a class="team__link" href="#"></a>
               </article>
@@ -212,7 +443,21 @@
                   <img class="team__image" src="/assets/images/team_1.jpg" alt="team_1" />
                 </div>
 
-                <h3 class="team__heading">Иванов Иван Иванович</h3>
+                <div class="team__content">
+                  <h3 class="team__heading">Иванов Иван Иванович</h3>
+
+                  <p class="team__description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem at, fuga
+                    exercitationem ut dolore voluptatibus inventore voluptates voluptas placeat
+                    laborum quidem corporis fugit quia assumenda reprehenderit culpa ratione quas
+                    odio. Blanditiis labore similique cupiditate nisi libero natus odit animi illum
+                    iste tempore ratione distinctio, consequatur eos quod rem voluptatibus quas quam
+                    voluptatum quis veritatis vero commodi. Qui placeat ipsa praesentium. Assumenda
+                    eveniet et tempore nihil unde, temporibus reprehenderit nulla, dolorum ab eum
+                    asperiores quisquam, molestiae atque beatae repudiandae? Eaque assumenda odio
+                    quod unde. Amet, temporibus velit quaerat aperiam doloribus sunt!
+                  </p>
+                </div>
 
                 <a class="team__link" href="#"></a>
               </article>
@@ -223,7 +468,21 @@
                   <img class="team__image" src="/assets/images/team_1.jpg" alt="team_1" />
                 </div>
 
-                <h3 class="team__heading">Иванов Иван Иванович</h3>
+                <div class="team__content">
+                  <h3 class="team__heading">Иванов Иван Иванович</h3>
+
+                  <p class="team__description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem at, fuga
+                    exercitationem ut dolore voluptatibus inventore voluptates voluptas placeat
+                    laborum quidem corporis fugit quia assumenda reprehenderit culpa ratione quas
+                    odio. Blanditiis labore similique cupiditate nisi libero natus odit animi illum
+                    iste tempore ratione distinctio, consequatur eos quod rem voluptatibus quas quam
+                    voluptatum quis veritatis vero commodi. Qui placeat ipsa praesentium. Assumenda
+                    eveniet et tempore nihil unde, temporibus reprehenderit nulla, dolorum ab eum
+                    asperiores quisquam, molestiae atque beatae repudiandae? Eaque assumenda odio
+                    quod unde. Amet, temporibus velit quaerat aperiam doloribus sunt!
+                  </p>
+                </div>
 
                 <a class="team__link" href="#"></a>
               </article>
@@ -234,7 +493,21 @@
                   <img class="team__image" src="/assets/images/team_1.jpg" alt="team_1" />
                 </div>
 
-                <h3 class="team__heading">Иванов Иван Иванович</h3>
+                <div class="team__content">
+                  <h3 class="team__heading">Иванов Иван Иванович</h3>
+
+                  <p class="team__description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem at, fuga
+                    exercitationem ut dolore voluptatibus inventore voluptates voluptas placeat
+                    laborum quidem corporis fugit quia assumenda reprehenderit culpa ratione quas
+                    odio. Blanditiis labore similique cupiditate nisi libero natus odit animi illum
+                    iste tempore ratione distinctio, consequatur eos quod rem voluptatibus quas quam
+                    voluptatum quis veritatis vero commodi. Qui placeat ipsa praesentium. Assumenda
+                    eveniet et tempore nihil unde, temporibus reprehenderit nulla, dolorum ab eum
+                    asperiores quisquam, molestiae atque beatae repudiandae? Eaque assumenda odio
+                    quod unde. Amet, temporibus velit quaerat aperiam doloribus sunt!
+                  </p>
+                </div>
 
                 <a class="team__link" href="#"></a>
               </article>
@@ -245,7 +518,21 @@
                   <img class="team__image" src="/assets/images/team_1.jpg" alt="team_1" />
                 </div>
 
-                <h3 class="team__heading">Иванов Иван Иванович</h3>
+                <div class="team__content">
+                  <h3 class="team__heading">Иванов Иван Иванович</h3>
+
+                  <p class="team__description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem at, fuga
+                    exercitationem ut dolore voluptatibus inventore voluptates voluptas placeat
+                    laborum quidem corporis fugit quia assumenda reprehenderit culpa ratione quas
+                    odio. Blanditiis labore similique cupiditate nisi libero natus odit animi illum
+                    iste tempore ratione distinctio, consequatur eos quod rem voluptatibus quas quam
+                    voluptatum quis veritatis vero commodi. Qui placeat ipsa praesentium. Assumenda
+                    eveniet et tempore nihil unde, temporibus reprehenderit nulla, dolorum ab eum
+                    asperiores quisquam, molestiae atque beatae repudiandae? Eaque assumenda odio
+                    quod unde. Amet, temporibus velit quaerat aperiam doloribus sunt!
+                  </p>
+                </div>
 
                 <a class="team__link" href="#"></a>
               </article>
@@ -256,7 +543,21 @@
                   <img class="team__image" src="/assets/images/team_1.jpg" alt="team_1" />
                 </div>
 
-                <h3 class="team__heading">Иванов Иван Иванович</h3>
+                <div class="team__content">
+                  <h3 class="team__heading">Иванов Иван Иванович</h3>
+
+                  <p class="team__description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem at, fuga
+                    exercitationem ut dolore voluptatibus inventore voluptates voluptas placeat
+                    laborum quidem corporis fugit quia assumenda reprehenderit culpa ratione quas
+                    odio. Blanditiis labore similique cupiditate nisi libero natus odit animi illum
+                    iste tempore ratione distinctio, consequatur eos quod rem voluptatibus quas quam
+                    voluptatum quis veritatis vero commodi. Qui placeat ipsa praesentium. Assumenda
+                    eveniet et tempore nihil unde, temporibus reprehenderit nulla, dolorum ab eum
+                    asperiores quisquam, molestiae atque beatae repudiandae? Eaque assumenda odio
+                    quod unde. Amet, temporibus velit quaerat aperiam doloribus sunt!
+                  </p>
+                </div>
 
                 <a class="team__link" href="#"></a>
               </article>
@@ -268,7 +569,11 @@
 
     <section class="athletes">
       <div class="wrapper team__wrapper">
-        <h2 class="section__heading">СПОРТСМЕНЫ</h2>
+        <div class="section__heading-container">
+          <h2 class="section__heading">СПОРТСМЕНЫ</h2>
+
+          <a class="section__heading-link" href="#">Перейти</a>
+        </div>
         <div id="athletesSwiper" class="swiper team__swiper">
           <div class="swiper-wrapper team__swiper-wrapper">
             <div class="swiper-slide">
@@ -277,7 +582,21 @@
                   <img class="team__image" src="/assets/images/team_1.jpg" alt="team_1" />
                 </div>
 
-                <h3 class="team__heading">Иванов Иван Иванович</h3>
+                <div class="team__content">
+                  <h3 class="team__heading">Иванов Иван Иванович</h3>
+
+                  <p class="team__description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem at, fuga
+                    exercitationem ut dolore voluptatibus inventore voluptates voluptas placeat
+                    laborum quidem corporis fugit quia assumenda reprehenderit culpa ratione quas
+                    odio. Blanditiis labore similique cupiditate nisi libero natus odit animi illum
+                    iste tempore ratione distinctio, consequatur eos quod rem voluptatibus quas quam
+                    voluptatum quis veritatis vero commodi. Qui placeat ipsa praesentium. Assumenda
+                    eveniet et tempore nihil unde, temporibus reprehenderit nulla, dolorum ab eum
+                    asperiores quisquam, molestiae atque beatae repudiandae? Eaque assumenda odio
+                    quod unde. Amet, temporibus velit quaerat aperiam doloribus sunt!
+                  </p>
+                </div>
 
                 <a class="team__link" href="#"></a>
               </article>
@@ -288,7 +607,21 @@
                   <img class="team__image" src="/assets/images/team_1.jpg" alt="team_1" />
                 </div>
 
-                <h3 class="team__heading">Иванов Иван Иванович</h3>
+                <div class="team__content">
+                  <h3 class="team__heading">Иванов Иван Иванович</h3>
+
+                  <p class="team__description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem at, fuga
+                    exercitationem ut dolore voluptatibus inventore voluptates voluptas placeat
+                    laborum quidem corporis fugit quia assumenda reprehenderit culpa ratione quas
+                    odio. Blanditiis labore similique cupiditate nisi libero natus odit animi illum
+                    iste tempore ratione distinctio, consequatur eos quod rem voluptatibus quas quam
+                    voluptatum quis veritatis vero commodi. Qui placeat ipsa praesentium. Assumenda
+                    eveniet et tempore nihil unde, temporibus reprehenderit nulla, dolorum ab eum
+                    asperiores quisquam, molestiae atque beatae repudiandae? Eaque assumenda odio
+                    quod unde. Amet, temporibus velit quaerat aperiam doloribus sunt!
+                  </p>
+                </div>
 
                 <a class="team__link" href="#"></a>
               </article>
@@ -299,7 +632,21 @@
                   <img class="team__image" src="/assets/images/team_1.jpg" alt="team_1" />
                 </div>
 
-                <h3 class="team__heading">Иванов Иван Иванович</h3>
+                <div class="team__content">
+                  <h3 class="team__heading">Иванов Иван Иванович</h3>
+
+                  <p class="team__description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem at, fuga
+                    exercitationem ut dolore voluptatibus inventore voluptates voluptas placeat
+                    laborum quidem corporis fugit quia assumenda reprehenderit culpa ratione quas
+                    odio. Blanditiis labore similique cupiditate nisi libero natus odit animi illum
+                    iste tempore ratione distinctio, consequatur eos quod rem voluptatibus quas quam
+                    voluptatum quis veritatis vero commodi. Qui placeat ipsa praesentium. Assumenda
+                    eveniet et tempore nihil unde, temporibus reprehenderit nulla, dolorum ab eum
+                    asperiores quisquam, molestiae atque beatae repudiandae? Eaque assumenda odio
+                    quod unde. Amet, temporibus velit quaerat aperiam doloribus sunt!
+                  </p>
+                </div>
 
                 <a class="team__link" href="#"></a>
               </article>
@@ -310,7 +657,21 @@
                   <img class="team__image" src="/assets/images/team_1.jpg" alt="team_1" />
                 </div>
 
-                <h3 class="team__heading">Иванов Иван Иванович</h3>
+                <div class="team__content">
+                  <h3 class="team__heading">Иванов Иван Иванович</h3>
+
+                  <p class="team__description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem at, fuga
+                    exercitationem ut dolore voluptatibus inventore voluptates voluptas placeat
+                    laborum quidem corporis fugit quia assumenda reprehenderit culpa ratione quas
+                    odio. Blanditiis labore similique cupiditate nisi libero natus odit animi illum
+                    iste tempore ratione distinctio, consequatur eos quod rem voluptatibus quas quam
+                    voluptatum quis veritatis vero commodi. Qui placeat ipsa praesentium. Assumenda
+                    eveniet et tempore nihil unde, temporibus reprehenderit nulla, dolorum ab eum
+                    asperiores quisquam, molestiae atque beatae repudiandae? Eaque assumenda odio
+                    quod unde. Amet, temporibus velit quaerat aperiam doloribus sunt!
+                  </p>
+                </div>
 
                 <a class="team__link" href="#"></a>
               </article>
@@ -321,7 +682,21 @@
                   <img class="team__image" src="/assets/images/team_1.jpg" alt="team_1" />
                 </div>
 
-                <h3 class="team__heading">Иванов Иван Иванович</h3>
+                <div class="team__content">
+                  <h3 class="team__heading">Иванов Иван Иванович</h3>
+
+                  <p class="team__description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem at, fuga
+                    exercitationem ut dolore voluptatibus inventore voluptates voluptas placeat
+                    laborum quidem corporis fugit quia assumenda reprehenderit culpa ratione quas
+                    odio. Blanditiis labore similique cupiditate nisi libero natus odit animi illum
+                    iste tempore ratione distinctio, consequatur eos quod rem voluptatibus quas quam
+                    voluptatum quis veritatis vero commodi. Qui placeat ipsa praesentium. Assumenda
+                    eveniet et tempore nihil unde, temporibus reprehenderit nulla, dolorum ab eum
+                    asperiores quisquam, molestiae atque beatae repudiandae? Eaque assumenda odio
+                    quod unde. Amet, temporibus velit quaerat aperiam doloribus sunt!
+                  </p>
+                </div>
 
                 <a class="team__link" href="#"></a>
               </article>
@@ -332,7 +707,21 @@
                   <img class="team__image" src="/assets/images/team_1.jpg" alt="team_1" />
                 </div>
 
-                <h3 class="team__heading">Иванов Иван Иванович</h3>
+                <div class="team__content">
+                  <h3 class="team__heading">Иванов Иван Иванович</h3>
+
+                  <p class="team__description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem at, fuga
+                    exercitationem ut dolore voluptatibus inventore voluptates voluptas placeat
+                    laborum quidem corporis fugit quia assumenda reprehenderit culpa ratione quas
+                    odio. Blanditiis labore similique cupiditate nisi libero natus odit animi illum
+                    iste tempore ratione distinctio, consequatur eos quod rem voluptatibus quas quam
+                    voluptatum quis veritatis vero commodi. Qui placeat ipsa praesentium. Assumenda
+                    eveniet et tempore nihil unde, temporibus reprehenderit nulla, dolorum ab eum
+                    asperiores quisquam, molestiae atque beatae repudiandae? Eaque assumenda odio
+                    quod unde. Amet, temporibus velit quaerat aperiam doloribus sunt!
+                  </p>
+                </div>
 
                 <a class="team__link" href="#"></a>
               </article>
@@ -342,7 +731,10 @@
       </div>
     </section>
 
+    <footer class="footer">footer</footer>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="/js/swipers.js"></script>
+    <script src="/js/nav.js"></script>
   </body>
 </html>
