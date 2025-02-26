@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'Yandex Sans Text';
+  src: url('/assets/fonts/YandexSansText-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Yandex Sans Display';
+  src: url('/assets/fonts/YandexSansText-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Yandex Sans Text';
+  src: url('/assets/fonts/YandexSansText-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+

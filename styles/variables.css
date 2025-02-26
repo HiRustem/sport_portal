@@ -1,11 +1,12 @@
 :root {
+  --black: #0a0a0a;
   --white: #fff;
+  --gray: #666;
+  --gray-light: #e0e0e0;
 
-  --h1-size: '';
-
-  --section-heading: 28px;
+  --section-heading: 26px;
 
   --content-text-size: 16px;
 
-  --special_blue: #59a4f5;
+  --special_blue: rgba(95,185,232, 1);
 }
