@@ -235,6 +235,11 @@ body:has(.mobile__nav-wrapper.visible) {
   text-align: start;
 }
 
+.section__heading.calendar__heading,
+.section__heading.contacts__heading {
+  text-align: center;
+}
+
 .section__heading-link {
   display: block;
 }
@@ -307,8 +312,18 @@ body:has(.mobile__nav-wrapper.visible) {
   background-color: var(--special_blue);
 }
 
+.news__section-heading {
+  color: var(--white);
+  text-align: center;
+}
+
 .section__heading.news__heading {
   color: var(--white);
+  text-align: start;
+}
+
+.news__card-heading {
+  text-align: start;
 }
 
 .news__list {
@@ -507,6 +522,7 @@ body:has(.mobile__nav-wrapper.visible) {
 .swiper.team__swiper,
 .swiper.news__swiper,
 .swiper.calendar__swiper {
+  padding-block: 10px;
   padding-inline-start: 10px;
   padding-inline-end: 20px;
 }
@@ -608,9 +624,11 @@ body:has(.mobile__nav-wrapper.visible) {
   background-color: var(--special_blue);
 }
 
+.team__heading,
+.news__heading,
 .athletes__heading {
   color: var(--white);
-  text-align: start;
+  text-align: center;
 }
 
 @media screen {
