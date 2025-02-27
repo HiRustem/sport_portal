@@ -36,7 +36,7 @@ var newsSwiper = new Swiper('#newsSwiper', {
     },
     1200: {
       slidesPerView: 3,
-    }
+    },
   },
   effect: 'slide',
   speed: 1000,
